@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <title>  Quântico Aleatório</title>
+        <title>Gerador Aleatório</title>
         <meta name="description" content="   quântico de caracteres aleatórios com opções personalizáveis" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111827" />

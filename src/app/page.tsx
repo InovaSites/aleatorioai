@@ -61,15 +61,18 @@ export default function GeradorAleatorio() {
         strategy="afterInteractive"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
       />
-
-      <header className="container mx-auto px-4 py-6">
-        <ins className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-XXXXXXXXXX"
-          data-ad-slot="XXXXXXXXXX"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      </header>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9957367545840879"
+        crossOrigin="anonymous"></script>
+      {/* anuncio1 */}
+      <ins className="adsbygoogle"
+        style={{display: "block"}}
+        data-ad-client="ca-pub-9957367545840879"
+        data-ad-slot="4401803108"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({ });
+      </script>
 
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">
@@ -137,14 +140,8 @@ export default function GeradorAleatorio() {
           </div>
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <ins className="adsbygoogle"
-            style={{ display: 'inline-block', width: '728px', height: '90px' }}
-            data-ad-client="ca-pub-XXXXXXXXXX"
-            data-ad-slot="XXXXXXXXXX"></ins>
-        </div>
+       
       </main>
-
       <footer className="container mx-auto px-4 py-8 text-center text-gray-400">
         <p className="flex items-center justify-center gap-2">
           <CommandLineIcon className="h-5 w-5" />

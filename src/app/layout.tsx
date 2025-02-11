@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <title>Gerador Quântico Aleatório</title>
         <meta name="description" content="Gerador quântico de caracteres aleatórios com opções personalizáveis" />

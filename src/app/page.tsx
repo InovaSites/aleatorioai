@@ -2,6 +2,7 @@
 import { useState, useCallback } from 'react';
 import Script from 'next/script';
 import { ClipboardDocumentIcon, SparklesIcon, CpuChipIcon, CommandLineIcon } from '@heroicons/react/24/outline';
+import GoogleAdsense from '@/components/GoogleAdsense';
 
 export default function GeradorAleatorio() {
   const [digitos, setDigitos] = useState(8);
@@ -57,23 +58,7 @@ export default function GeradorAleatorio() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <Script
-        strategy="afterInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
-      />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9957367545840879"
-        crossOrigin="anonymous"></script>
-      {/* anuncio1 */}
-      <ins className="adsbygoogle"
-        style={{display: "block"}}
-        data-ad-client="ca-pub-9957367545840879"
-        data-ad-slot="4401803108"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({ });
-      </script>
-
+      <GoogleAdsense />
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">
           <h1 className="text-4xl font-bold mb-6 flex items-center gap-3">
@@ -139,8 +124,6 @@ export default function GeradorAleatorio() {
             )}
           </div>
         </div>
-
-       
       </main>
       <footer className="container mx-auto px-4 py-8 text-center text-gray-400">
         <p className="flex items-center justify-center gap-2">

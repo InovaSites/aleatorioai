@@ -57,7 +57,7 @@ export default function GeradorAleatorio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen w-full text-white">
       <GoogleAdsense />
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">

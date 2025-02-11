@@ -2,7 +2,6 @@
 import { useState, useCallback } from 'react';
 import Script from 'next/script';
 import { ClipboardDocumentIcon, SparklesIcon, CpuChipIcon, CommandLineIcon } from '@heroicons/react/24/outline';
-import GoogleAdsense from '@/components/GoogleAdsense';
 
 export default function GeradorAleatorio() {
   const [digitos, setDigitos] = useState(8);
@@ -57,10 +56,9 @@ export default function GeradorAleatorio() {
   };
 
   return (
-    <div className="min-h-screen w-full text-white">
-      <GoogleAdsense />
-      <main className="container mx-auto px-4 py-12">
-        <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">
+    <div className="min-h-screen w-full text-white flex flex-col">
+      <main className="container mx-auto px-4 py-12 flex-grow flex items-center justify-center">
+        <div className="max-w-2xl w-full bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">
           <h1 className="text-4xl font-bold mb-6 flex items-center gap-3">
             <SparklesIcon className="h-10 w-10 text-purple-400" />
             Gerador Quântico Aleatório

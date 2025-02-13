@@ -3,6 +3,7 @@ import { useState, useCallback } from 'react';
 import Script from 'next/script';
 import { ClipboardDocumentIcon, SparklesIcon, CpuChipIcon, CommandLineIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import Adsense from '@/components/Adsense';
 
 
 export default function GeradorAleatorio() {
@@ -59,7 +60,12 @@ export default function GeradorAleatorio() {
 
   return (
     <div className="min-h-screen w-full text-white flex flex-col">
-      <main className="container mx-auto px-4 py-12 flex-grow flex items-center justify-center">
+      <main className="container mx-auto px-4 py-8 flex-grow">
+        {/* Anúncio superior */}
+        <div className="mb-8">
+          <Adsense slot="4401803108" />
+        </div>
+
         <div className="max-w-2xl w-full mx-auto bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-gray-700/30">
           <h1 className="text-4xl font-bold mb-6 flex items-center gap-3">
             <Image src="/logo.png" alt="Logo" width={100} height={100} priority className="text-purple-400" />
@@ -123,6 +129,11 @@ export default function GeradorAleatorio() {
               </div>
             )}
           </div>
+        </div>
+
+        {/* Anúncio inferior */}
+        <div className="mt-8">
+          <Adsense slot="3578572375" />
         </div>
       </main>
       <footer className="container mx-auto px-4 py-8 text-center text-gray-400">
